@@ -18,9 +18,9 @@ match priority:
 
 # Adjust reminder if task is time-bound
 if time_bound == "yes":
-    reminder += " that requires immediate attention today!"
+    reminder = f"Reminder: {reminder} that requires immediate attention today!"
 else:
     reminder = "Note: " + reminder + ". Consider completing it when you have free time."
 
 # Print the customized reminder
-print("\nReminder:", reminder)
+print(reminder)
